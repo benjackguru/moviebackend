@@ -38,7 +38,7 @@ app.use(express.static(path.join(__dirname,'dist/moviesite')));
 app.use('/api',movieRoute);
 
 //port create
-const port = process.env.post||8000;
+const port = process.env.port||8000;
 app.listen(port,()=>{
     console.log('listening port on' +port)
 });
